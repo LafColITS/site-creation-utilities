@@ -1,0 +1,16 @@
+{
+  "name": "wordpress/site-creation-utilities",
+  "description": "This plugin improves the Multisite site creation process by eliminating undesired features",
+  "type": "wordpress-plugin",
+  "homepage": "https://www.lafayette.edu",
+  "license": "GPL-2.0",
+  "authors": [
+    {
+      "name": "Charles Fulton",
+      "email": "fultonc@lafayette.edu"
+    }
+  ],
+  "require": {
+    "composer/installers": "^1.0"
+  }
+}
