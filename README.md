@@ -11,7 +11,7 @@ This plugin improves the Multisite site creation process by eliminating undesire
 
 ## Description ##
 
-This plugin eliminates two undesired features from Multisite site creation:
+This plugin suppresses features of the Multisite site creation process:
 
 - It suppresses the welcome email sent to new site administrators on site creation
 - It cancels the site creation process if the given email does not exist, instead of creating a local user
