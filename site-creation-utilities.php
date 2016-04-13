@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Site Creation Utilities
- * Version: 0.1-alpha
+ * Version: 1.0.0
  * Description: This plugin improves the Multisite site creation process by eliminating undesired features.
  * Author: Charles Fulton
  * Author URI: https://www.lafayette.edu
