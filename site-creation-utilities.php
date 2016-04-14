@@ -5,7 +5,7 @@
  * Description: This plugin improves the Multisite site creation process by eliminating undesired features.
  * Author: Charles Fulton
  * Author URI: https://www.lafayette.edu
- * Plugin URI: https://git.lafayette.edu/wordpress/site-creation-utilities
+ * Plugin URI: https://github.com/LafColITS/site-creation-utilities
  * Text Domain: site-creation-utilities
  * Domain Path: /languages
  * @package Site-creation-utilities
