@@ -18,6 +18,18 @@ module.exports = function( grunt ) {
 			}
 		},
 
+                bump: {
+                        options: {
+                                files: ['package.json', 'site-creation-utilities.php', 'readme.txt'],
+                                commitMessage: 'Site Creation Utilities %VERSION%',
+                                commitFiles: ['package.json', 'site-creation-utilities.php', 'readme.txt', 'README.md', 'languages/site-creation-utilities.pot'],
+                                push: false,
+                                tagName: '%VERSION%',
+                                tagMessage: 'Site Creation Utilities %VERSION%',
+                                regExp: new RegExp('([\'|\"]?(?:version|stable tag)[\'|\"]?[ ]*:[ ]*[\'|\"]?)(\\d+\\.\\d+\\.\\d+(-rc\\.\\d+)?(-\\d+)?)[\\d||A-a|.|-]*([\'|\"]?)', 'i'),
+                        }
+                },
+
 		wp_readme_to_markdown: {
 			your_target: {
 				files: {
@@ -56,6 +68,7 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( 'grunt-phpcs');
 	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-wp-readme-to-markdown' );
+	grunt.loadNpmTasks( 'grunt-bump' );
 	grunt.registerTask( 'i18n', ['addtextdomain', 'makepot'] );
 	grunt.registerTask( 'readme', ['wp_readme_to_markdown'] );
 	grunt.registerTask( 'standards', ['phpcs'] );
