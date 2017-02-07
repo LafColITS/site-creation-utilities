@@ -18,17 +18,17 @@ module.exports = function( grunt ) {
 			}
 		},
 
-                bump: {
-                        options: {
-                                files: ['package.json', 'site-creation-utilities.php', 'readme.txt'],
-                                commitMessage: 'Site Creation Utilities %VERSION%',
-                                commitFiles: ['package.json', 'site-creation-utilities.php', 'readme.txt', 'README.md', 'languages/site-creation-utilities.pot'],
-                                push: false,
-                                tagName: '%VERSION%',
-                                tagMessage: 'Site Creation Utilities %VERSION%',
-                                regExp: new RegExp('([\'|\"]?(?:version|stable tag)[\'|\"]?[ ]*:[ ]*[\'|\"]?)(\\d+\\.\\d+\\.\\d+(-rc\\.\\d+)?(-\\d+)?)[\\d||A-a|.|-]*([\'|\"]?)', 'i'),
-                        }
-                },
+		bump: {
+			options: {
+				files: ['package.json', 'site-creation-utilities.php', 'readme.txt'],
+				commitMessage: 'Site Creation Utilities %VERSION%',
+				commitFiles: ['package.json', 'site-creation-utilities.php', 'readme.txt', 'README.md', 'languages/site-creation-utilities.pot'],
+				push: false,
+				tagName: '%VERSION%',
+				tagMessage: 'Site Creation Utilities %VERSION%',
+				regExp: new RegExp('([\'|\"]?(?:version|stable tag)[\'|\"]?[ ]*:[ ]*[\'|\"]?)(\\d+\\.\\d+\\.\\d+(-rc\\.\\d+)?(-\\d+)?)[\\d||A-a|.|-]*([\'|\"]?)', 'i'),
+			}
+		},
 
 		wp_readme_to_markdown: {
 			your_target: {
