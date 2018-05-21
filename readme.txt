@@ -23,6 +23,10 @@ It also flushes rewrite rules on site creation to address https://core.trac.word
 1. Upload the `site-creation-utilities` folder to the `/wp-content/plugins/` directory
 1. Network activate the plugin through the 'Plugins' menu in the WordPress Network Admin
 
+== Privacy ==
+
+This plugin neither collects nor stores any personal, private, or identifying information about any user.
+
 == Changelog ==
 = 1.0.3 =
 
