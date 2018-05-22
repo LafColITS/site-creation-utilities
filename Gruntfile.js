@@ -56,7 +56,7 @@ module.exports = function( grunt ) {
 
 		phpcs: {
 			application: {
-				src: ['*.php']
+				src: ['*.php', 'includes/**/*.php']
 			},
 			options: {
 				bin: 'vendor/bin/phpcs',
