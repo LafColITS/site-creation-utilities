@@ -14,9 +14,9 @@
     "composer/installers": "^1.0"
   },
   "require-dev": {
-      "wp-coding-standards/wpcs": "dev-master"
+      "wp-coding-standards/wpcs": "dev-master@dev"
   },
   "scripts": {
-      "post-install-cmd": "vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs"
+      "post-update-cmd": "vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs"
   }
 }
