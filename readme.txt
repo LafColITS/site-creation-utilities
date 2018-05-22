@@ -2,8 +2,8 @@
 Contributors: mackensen
 Tags: wpmu
 Requires at least: 4.5
-Tested up to: 4.7.2
-Stable tag: 1.0.3
+Tested up to: 4.9
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,11 @@ It also flushes rewrite rules on site creation to address https://core.trac.word
 This plugin neither collects nor stores any personal, private, or identifying information about any user.
 
 == Changelog ==
+= 1.0.4 =
+
+* Code cleanup.
+* Added privacy notice to README.
+
 = 1.0.3 =
 
 * New feature: flush rewrite rules on site creation.
