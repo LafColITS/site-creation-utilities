@@ -13,8 +13,8 @@ class Site_Creation_Utilities {
 	}
 
 	// Flush rewrite rules on site creation.
-	public static function flush_rewrite_rules( $blog_id, $user_id, $domain, $path, $site_id, $meta ) {
-		switch_to_blog( $blog_id );
+	public static function flush_rewrite_rules( $site ) {
+		switch_to_blog( $site->blog_id );
 		update_option( 'rewrite_rules', array() );
 		restore_current_blog();
 	}
