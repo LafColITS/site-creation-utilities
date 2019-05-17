@@ -18,4 +18,12 @@ class Site_Creation_Utilities {
 		update_option( 'rewrite_rules', array() );
 		restore_current_blog();
 	}
+
+	// Flush rewrite rules on site creation.
+	// This is for compatibility with 5.0 and below.
+	public static function flush_rewrite_rules_50( $blog_id, $user_id, $domain, $path, $site_id, $meta ) {
+		switch_to_blog( $blog_id );
+		update_option( 'rewrite_rules', array() );
+		restore_current_blog();
+	}
 }

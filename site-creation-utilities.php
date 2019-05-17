@@ -16,4 +16,9 @@ require( 'includes/class-site-creation-utilities.php' );
 
 add_action( 'pre_network_site_new_created_user', array( 'Site_Creation_Utilities', 'disable_user_creation' ) );
 add_filter( 'wpmu_welcome_notification', array( 'Site_Creation_Utilities', 'disable_welcome_email' ), 10, 5 );
-add_action( 'wp_insert_site', array( 'Site_Creation_Utilities', 'flush_rewrite_rules' ), 10, 6 );
+
+if ( has_action( 'wp_insert_site' ) ) {
+    add_action( 'wp_insert_site', array( 'Site_Creation_Utilities', 'flush_rewrite_rules' ), 10, 6 );
+} else {
+    add_action( 'wpmu_new_blog', array( 'Site_Creation_Utilities', 'flush_rewrite_rules_50' ), 10, 6 );
+}
