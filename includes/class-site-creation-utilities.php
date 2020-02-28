@@ -15,7 +15,7 @@ class Site_Creation_Utilities {
 	// Flush rewrite rules on site creation.
 	public static function flush_rewrite_rules( $site ) {
 		switch_to_blog( $site->blog_id );
-		update_option( 'rewrite_rules', array() );
+		delete_option( 'rewrite_rules' );
 		restore_current_blog();
 	}
 
